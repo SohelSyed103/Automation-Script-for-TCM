@@ -22,12 +22,12 @@ public class UdePrac {
 		if (driver.getPageSource().contains("TO HAVE AND HAVE NOT"))
 		
 		{
-			System.out.println("Title Present");
+			System.out.println("Title for To Have and Have Not is Present");
 		}
 		
 		else 
 		{
-			System.out.println("Title Not Present");
+			System.out.println("Title for To Have and Have Not is not Present");
 		}
 	if(driver.getPageSource().contains("A skipper-for-hire's romance with a beautiful drifter is complicated by his growing involvement with the French resistance."))
 		
