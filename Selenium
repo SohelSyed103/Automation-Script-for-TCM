@@ -1,0 +1,305 @@
+package Sel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UdePrac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "C://Users//Sohel's Laptop//Chromerdriver//chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver(); 
+	  
+		driver.get("http://www.tcm.com/tcmdb/");
+		
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//*[@id='movieSearchList']/div/a[1]")).click();
+		
+		if (driver.getPageSource().contains("TO HAVE AND HAVE NOT"))
+		
+		{
+			System.out.println("Title Present");
+		}
+		
+		else 
+		{
+			System.out.println("Title Not Present");
+		}
+	if(driver.getPageSource().contains("A skipper-for-hire's romance with a beautiful drifter is complicated by his growing involvement with the French resistance."))
+		
+		{
+			System.out.println("Overview for To Have And Have Not is Present");
+		
+		}
+		
+
+else {
+			System.out.println("Overview To Have And Have Not is not Present");
+		
+}
+	
+if (driver.getPageSource().contains("Walter Molnar"))
+	
+if	(driver.getPageSource().contains("Paul Marion"))
+	
+{
+	System.out.println("Actors Walter Molnar and Paul Marion are Present");
+
+}
+
+
+else {
+	System.out.println("Actors Walter Molnar and Paul Marion are not Present");
+
+}
+
+
+if (driver.getPageSource().contains("Release Date"))
+	
+{
+	System.out.println("Release Date for To Have And Have Not is Present");
+
+}
+
+
+else {
+	System.out.println("Release Date for To Have And Have Not is  not Present");
+
+}
+
+driver.get("http://www.tcm.com/tcmdb/");
+
+driver.findElement(By.xpath("//*[@id='movieSearchList']/div/a[3]")).click();
+
+if (driver.getPageSource().contains("THOROUGHLY MODERN MILLIE"))
+
+{
+	System.out.println("Title for Thoroughly Modern Millie is Present");
+}
+
+else 
+{
+	System.out.println("Title for Thoroughly Modern Millie is not Present");
+}
+if(driver.getPageSource().contains("A small-town girl hits the big city in search of romance Roaring Twenties style."))
+
+{
+	System.out.println("Overview for Thoroughly Modern Millie is Present");
+
+}
+
+
+else {
+	System.out.println("Overview for Thoroughly Modern Millie is Present is not Present");
+
+}
+
+if (driver.getPageSource().contains("Jack Soo"))
+
+if	(driver.getPageSource().contains("Pat Morita"))
+
+{
+System.out.println("Actors Jack Soo and Pat Morita are Present");
+
+}
+
+
+else {
+System.out.println("Actors Jack Soo and Pat Morita are not Present");
+
+}
+
+
+if (driver.getPageSource().contains("Release Date"))
+
+{
+System.out.println("Release Date for Thoroughly Modern Millie Present");
+
+}
+
+
+else {
+System.out.println("Release Date for Thoroughly Modern Millie not Present");
+
+}
+
+
+driver.get("http://www.tcm.com/tcmdb/");
+
+driver.findElement(By.xpath("//*[@id='movieSearchList']/div/a[8]")).click();
+
+if (driver.getPageSource().contains("MAGIC TOWN"))
+
+{
+	System.out.println("Title for Magic Town is Present");
+}
+
+else 
+{
+	System.out.println("Title for Magic Town is not Present");
+}
+if(driver.getPageSource().contains("A political pollster discovers the perfect cross-section of American tastes and fights to keep it that way."))
+
+{
+	System.out.println("Overview for Magic Town is Present");
+
+}
+
+
+else {
+	System.out.println("Overview for Magic Town is not Present");
+
+}
+
+if (driver.getPageSource().contains("Ned Sparks"))
+
+if	(driver.getPageSource().contains("Ann Doran"))
+
+{
+System.out.println("Actors Ned Sparks and Ann Doran are Present");
+
+}
+
+
+else {
+System.out.println("Actors Ned Sparks and Ann Doran are not Present");
+
+}
+
+
+if (driver.getPageSource().contains("Release Date"))
+
+{
+System.out.println("Release Date for Magic Town is Present");
+
+}
+
+
+else {
+System.out.println("Release Date for Magic Town is not Present");
+
+}
+
+
+driver.get("http://www.tcm.com/tcmdb/");
+
+driver.findElement(By.xpath("//*[@id='movieSearchList']/div/a[7]")).click();
+
+if (driver.getPageSource().contains("ORDINARY PEOPLE"))
+
+{
+	System.out.println("Title for Ordinary People is Present");
+}
+
+else 
+{
+	System.out.println("Title for Ordinary People is not Present");
+}
+if(driver.getPageSource().contains("When a young man drowns, his family fights to recover from the trauma."))
+
+{
+	System.out.println("Overview for Ordinary People is Present");
+
+}
+
+
+else {
+	System.out.println("Overview for Ordinary People is not Present");
+
+}
+
+if (driver.getPageSource().contains("Dinah Manoff"))
+
+if	(driver.getPageSource().contains("Fredric Lane"))
+
+{
+System.out.println("Actors Dinah Manoff and Frederic Lane are Present");
+
+}
+
+
+else {
+System.out.println("Actors Dinah Manoff and Frederic Lane are not Present");
+
+}
+
+
+if (driver.getPageSource().contains("Release Date"))
+
+{
+System.out.println("Release Date for Ordinary People is Present");
+
+}
+
+
+else {
+System.out.println("Release Date for Ordinary People is not Present");
+
+}
+
+driver.get("http://www.tcm.com/tcmdb/");
+
+driver.findElement(By.xpath("//*[@id='movieSearchList']/div/a[4]")).click();
+
+if (driver.getPageSource().contains("ROME ADVENTURE"))
+
+{
+	System.out.println("Title for Rome Aventure is Present");
+}
+
+else 
+{
+	System.out.println("Title for Rome Aventure is not Present");
+}
+if(driver.getPageSource().contains("A small-town girl hits the big city in search of romance Roaring Twenties style."))
+
+{
+	System.out.println("Overview for Rome Aventure is Present");
+
+}
+
+
+else {
+	System.out.println("Overview for Rome Aventure is not Present");
+
+}
+
+if (driver.getPageSource().contains("Al Hirt"))
+
+if	(driver.getPageSource().contains("Chad Everett"))
+
+{
+System.out.println("Actors Al Hirt and Chad Everett are Present");
+
+}
+
+
+else {
+System.out.println("Actors Al Hirt and Chad Everett are are not Present");
+
+}
+
+
+if (driver.getPageSource().contains("Release Date"))
+
+{
+System.out.println("Release Date for Rome Aventure is Present");
+
+}
+
+
+else {
+System.out.println("Release Date for Rome Aventure is not Present");
+
+}
+
+
+	
+		
+	}
+
+}
